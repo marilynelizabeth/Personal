@@ -339,6 +339,37 @@ textarea {
 	margin-left: 200px;
 	margin-top: 0;
 }
+
+
+
+
+@media only screen and (max-width: 640px) {
+/*
+
+WRITE YOUR MOBILE SPECIFIC STYLE STUFF HERE!!!!
+
+*/
+	.nav {
+		position: relative;
+		width: 100%;
+		display: block;
+	}
+	
+	.canvas {
+		padding-left: 0;
+	}
+	
+	.box {
+		padding-bottom: 0;
+	}
+	
+	.innerContent {
+		position: relative;
+		top: inherit;
+		left: inherit;
+	}
+}
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
