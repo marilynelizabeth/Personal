@@ -256,22 +256,23 @@ textarea {
   }
   
   .active-trail-blog {
-    background-color:#242424;
+    background-color:#ea0076;
     
   }
   
     .active-trail-home {
-    background-color:#242424;
+    background-color:#a7e8ce;
     
   }
   
     .active-trail-folio {
-    background-color:#242424;
+    background-color:#FF931E;
+    color: white;
     
   }
   
       .active-trail-contact {
-    background-color:#242424;
+    background-color:#77B8D8;
     
   }
   
@@ -301,9 +302,42 @@ textarea {
     }
 
 .form {
-	float: right;
+	float: inherit;
+	margin-top: 40px;
+	margin-left: 500px;
+	background: #535353;
+	color: white;
+	border-color: #535353:
+	
 }
 
+.contact{
+	width: 40%;
+	margin-left: 200px;
+}
+
+.game-d {
+	margin-left:150px
+}
+
+.game {
+	margin-left:200px
+}
+
+.gameb {
+	margin-left:500px
+}
+
+.week-1 {
+	margin-left: 145px;
+	padding: 0;
+	
+}
+
+.phone{
+	margin-left: 200px;
+	margin-top: 0;
+}
 /* ==========================================================================
    Helper classes
    ========================================================================== */
