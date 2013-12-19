@@ -96,7 +96,7 @@ textarea {
    Author's custom styles
    ========================================================================== */
   body {
-    height:100%;
+    height:0%;
     padding:0px;
     margin:0px;
   }
@@ -104,28 +104,30 @@ textarea {
     color:#000;
     font-size:100%;
     font-family:Verdana,sans-serif;
-    background-color:#ffffff;    /* set the background-color of the browser window here #bdf */
+    background-image: url(light_grey.png);    /* set the background-color of the browser window here #bdf */
     overflow-y:scroll;
     padding:0;
     margin:0;
   }
-  /* Opera Fix */
-  body:before {    /* thanks to Maleika (Kohoutec) */
-    content:"";
+
+  body:before {   
+    content: none;
     height:100%;
     float:left;
     width:0;
-    margin-top:-32767px;    /* thank you Erik J - negate effect of float */
+    margin-top:-32767px;    
   }
   #outer {
-    width:988px;
+    width:900px;
     min-height:100%;
     position:relative;
-    margin:-137px auto 0;    /* footer height - this drags the outer 40px up through the top of the monitor */
+    margin:-137px auto 0;
+    background:#e7e3dd
+    
   }
   .canvas {
-    background-color:#ffffff;    /* overall background-color */
-    border-radius:20px;
+    background-image:;
+    border-radius:200px;
     padding:15px 15px 15px 156px;
   }
   #footer {
@@ -141,14 +143,13 @@ textarea {
   }
   h1 {
     height:10px;
-    border-top:50px solid #fff;    /* soak up negative margin and allows header to start at top of page */
+    border-top:110px solid #fff;
     font-size:.6em;
     text-align:center;
     visibility:hidden;
     margin:0;
   }
   .content {
-    background-color:#e8e7e4;
     background-repeat:repeat;
     background-attachment:scroll;
     border-radius:120px;
@@ -160,7 +161,7 @@ textarea {
   .nav {
     list-style-type:none;
     position:fixed;        
-    left:50%;
+    left:40%;
     top:0px;              
     bottom:0px;           
     padding:0;
@@ -189,7 +190,7 @@ textarea {
     border:2px solid #865;
     border-radius:9px;
     background-color:#421;
-    color:#865;
+    color:#876554;
   }
   .nav li.p {
     margin-top:12px;
@@ -226,7 +227,7 @@ textarea {
   .nav a {
     display:block;
 
-    color:#f0f0f0;
+    color:#242424;
     text-decoration:none;
     padding:8px 0;
   }
@@ -236,7 +237,7 @@ textarea {
     background-color:#1e1e1e;
   }
   .nav a:active {
-    color:#f00;
+    color:#979797;
     background-color:#eee;
   }
   /* IMAGES */
@@ -253,6 +254,52 @@ textarea {
   .site-content {
 	  text-align: left;
   }
+  
+  .active-trail-blog {
+    background-color:#242424;
+    
+  }
+  
+    .active-trail-home {
+    background-color:#242424;
+    
+  }
+  
+    .active-trail-folio {
+    background-color:#242424;
+    
+  }
+  
+      .active-trail-contact {
+    background-color:#242424;
+    
+  }
+  
+  .ponzi {
+	  float: left;
+  }
+
+    #wrap {
+      overflow: hidden;
+    }
+    .box {
+      width: 30%;
+      padding-bottom: 30%;
+      color: #FFF;
+      position: relative;
+      float: left;
+    }
+    .innerContent {
+      position: absolute;
+      left: 1px;
+      right: 1px;
+      top: 1px;
+      bottom: 1px;
+      background: #66F;
+      padding:;
+    }
+
+
 
 /* ==========================================================================
    Helper classes

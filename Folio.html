@@ -37,16 +37,16 @@
   /* */
   </style>
 </head>
-dfdl<!--BODY STARTS-->
+<!--BODY STARTS-->
 
 <body id="p">
   <div id="outer">
     <ul class="nav">
-      <li class="i"><a href="#"><img alt="" height="128" src=<a href="http://www.codemyspace.com/gifs/" target=new><img src="http://www.codemyspace.com/ImageSRC/3/390.gif" width="128"></a></li>
+      <li class="i"><a href="#"><img alt="" height="128" src=
+      "logo.png" width="200"></a></li>
+      <li class="r"><a href="index.html">HOME</a></li>
 
-      <li class="r"><a href="#">HOME</a></li>
-
-      <li class="l"><a href="folio.html">FOLIO</a></li>
+      <li class="active-trail-folio"><a href="folio.html">FOLIO</a></li>
 
       <li class="f"><a href="blog.html">BLOG</a></li>
 
@@ -55,9 +55,60 @@ dfdl<!--BODY STARTS-->
 
     <div class="canvas">
      
-    
-  
-  <div class="site-content">
+ <div id="wrap">
+    <div class="box">
+      <div class="innerContent">
+        Absolutely-positioned content isn't counted in the parent's height!
+      </div>
+    </div>
+    <div class="box">
+      <div class="innerContent">
+        Absolutely-positioned content isn't counted in the parent's height!
+      </div>
+    </div>
+    <div class="box">
+      <div class="innerContent">
+        Absolutely-positioned content isn't counted in the parent's height!
+      </div>
+    </div>
+    <div class="box">
+      <div class="innerContent">
+        Absolutely-positioned content isn't counted in the parent's height!
+      </div>
+    </div>
+    <div class="box">
+      <div class="innerContent">
+        <a href="blog.html"><img src="http://i42.tinypic.com/jh34mu.png"></a>
+      </div>
+    </div>
+    <div class="box">
+      <div class="innerContent">
+        <img src="http://i41.tinypic.com/t8ax5l.png">
+      </div>
+    </div>
+    <div class="box">
+      <div class="innerContent">
+        <img src="http://i41.tinypic.com/t8ax5l.png">
+      </div>
+    </div>
+    <div class="box">
+      <div class="innerContent">
+        <img src="http://i44.tinypic.com/29n7yn7.png">
+      </div>
+    </div>
+    <div class="box">
+      <div class="innerContent">
+        <img src="http://www.getthebigpicture.net/storage/trailers/otherguys_credits.jpg"
+		>
+      </div>
+    </div>
+    <div class="box">
+      <div class="innerContent">
+        <img alt="Logo" src="http://i39.tinypic.com/1z57qy9.png">
+      </div>
+    </div>
+  </div>
+ 
 		
       <img align="center" alt="Logo" src="http://i39.tinypic.com/1z57qy9.png" width="500" height="300">
 		<p> http://www.youtube.com/watch?v=oDAw7vW7H0c
@@ -94,24 +145,19 @@ I was looking through a bunch of animated shape-based graphics through Vimeo and
 		width="500" height="300">
 	
 		<p>http://cinemagraphs.com
-My friend had a project where she needed to embody time without portraying it so I told her she should try to make a GIF, but not an ordinary GIF, a Cinemagraph-styled GIF. This website is devoted to a new-age version of GIFs because of their high-quality, timeless feeling. The image is a high-resolution photograph that has masked-out video components that breathe life into one instant in the image. By doing this, they create a never ending photograph that is living but not quite a video. I would love to use this trick in any of my future projects because they look so elegant and constant. I believe that it would work well for an animated logo or large pictorial components to a website or portfolio. 
-</p>
+
 
 		<h2>MCDONALD'S</h2>
 		
-		<img src="http://i43.tinypic.com/2emfjte.png"
+		<img src="http://i41.tinypic.com/t8ax5l.png"
 		width="500" height="300">
-		<p>http://www.mcdonalds.com/us/en/home.html
-When I was looking through website designs I came across the McDonald’s website and thought that it was odd how well made it was. It makes sense because of how much money McDonald’s rakes in but it was still a shock to see something from a fast food company done so well. They have everything from a well-organized navigation menu that highlights the menu. Locations, and career opportunities to a meal builder that allows you select menu items and calculate the total calories of the meal. I plan to use this while making my redesigned website because it has all the bells and whistles that my interviewees said they would appreciate having. Overall, I would recommend anyone to take a look at the website and really take the time to appreciate all the effort gone into create this very clean easy-to-use website.
-</p>
+
 
 		<h2>TYPOGRAPHY MANIA</h2>
 		
 		<img src="http://i42.tinypic.com/jh34mu.png"
 		width="500" height="300">
-		<p>http://abduzeedo.com/tags/typography-mania
-Typography Mania is a weekly post series of collected typography from the web. They showcase tons of interesting typography designs that are very inspiring and help designers see what other designers are doing out in the world. I am most enthralled by the submissions that have video links that allow you to watch the maker create the typography. It’s amazing to see someone hand letter an intricate piece as well as see someone etch their design into a panel of wood. I would like to use these works of art as inspiration to figure out what sorts of designs I want to create to convey particular tones and moods in a piece. I will definitely be using this site in the future and hope to gain some creative inspiration!
-</p>
+
 </div>
   </div>
 
@@ -122,6 +168,24 @@ Typography Mania is a weekly post series of collected typography from the web. T
   <div id="footer">
     <p id="datebot">Updated:&nbsp; 12.19.2013</p>
   </div><script type="text/javascript">
+  
+$('.photoset-grid-custom').photosetGrid({
+  // Set the gutter between columns and rows
+  gutter: '5px',
+  // Manually set the grid layout
+  layout: '21',
+  // Wrap the images in links
+  highresLinks: true,
+  // Asign a common rel attribute
+  rel: 'print-gallery',
+
+  onInit: function(){},
+  onComplete: function(){
+    // Show the grid after it renders
+    $('.photoset-grid-custom').attr('style', '');
+  }
+});
+  
     $(document).ready(function(){
         var $nav = $('.nav'),
             $page = $(document),
